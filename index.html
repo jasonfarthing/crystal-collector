@@ -23,7 +23,77 @@
 
 <body>
 
-<h1>Hello, this is Crystal Collector</h1>
+    <div class="jumbotron">
+        <h1 class="text-center" id="header-title">The Chakra Collector</h1>
+        <h2 class="text-center">Collect Chakra Stones of different values to 'EXACTLY' match the target score and achieve Total Enlightenment!</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your Goal for Total Enlightenment is...</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <h1><span id="computer-pick"></span></h1>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Collect your Stones</h3>
+                </div>
+                <div class="panel-body text-center" class="stones">
+                    <img id="solar" src="assets/images/Solar.png" alt="solar chakra" height="150px">
+                    <img id="crown" src="assets/images/Crown.png" alt="crown chakra" height="150px">
+                    <img id="root" src="assets/images/Root.png" alt="root chakra" height="150px">
+                    <img id="heart" src="assets/images/Heart.png" alt="heart chakra" height="150px">
+
+                </div>
+            </div>
+        </div>
+        <div class="row" >
+            <div class=col-lg-6 >
+                <div class="panel panel-default">
+                    <div class="panel-heading" class="text-left">
+                        <h3 class="panel-title" >My Score</h3>
+                    </div>
+
+                    <div class="panel-body text-center">
+
+                        <h1>Your Score:
+                            <span id="my-score">0</span>
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=col-lg-6>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="total-score"></h3>
+                        </div>
+    
+                        <div class="panel-body text-center">
+    
+                            <h1>Wins : 
+                                <span id="my-wins">0</span>
+                            </h1>
+                            <h1>Losses : 
+                                    <span id="my-losses">0</span>
+                                </h1>
+    
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+    </div>
 
 
 
@@ -41,27 +111,11 @@
 
 
 
+    <script src="assets/javascript/game.js">
+    </script>
 
 
 
-    <script type="text/javascript">
+</body>
 
-        $(document).ready(function () {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        });
-            
-</body >
-</html >
+</html>

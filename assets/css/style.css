@@ -1,4 +1,16 @@
-h1 {
-    color: red;
+h1, .text-center{
+    color: rgb(221, 126, 126);
+} 
 
+#header-title{
+    color: white;
+}
+
+.jumbotron{
+    background-image: url(../../assets/images/cardsblur.png)
+    /* background-color: blue; */   
+}
+
+body {
+    background: black;
 }
