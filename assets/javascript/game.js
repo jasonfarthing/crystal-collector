@@ -4,29 +4,31 @@ console.log("poo");
 $(document).ready(function () {
 
 
-    var targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-    console.log(targetScore);
+    // var targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    // console.log(targetScore);
 
-    var stone1 = Math.floor(Math.random() * 12 + 1);
-    console.log(stone1);
+    // var stone1 = Math.floor(Math.random() * 12 + 1);
+    // console.log(stone1);
 
-    var stone2 = Math.floor(Math.random() * 12 + 1);
-    console.log(stone2);
+    // var stone2 = Math.floor(Math.random() * 12 + 1);
+    // console.log(stone2);
 
-    var stone3 = Math.floor(Math.random() * 12 + 1);
-    console.log(stone3);
+    // var stone3 = Math.floor(Math.random() * 12 + 1);
+    // console.log(stone3);
 
-    var stone4 = Math.floor(Math.random() * 12 + 1);
-    console.log(stone4);
+    // var stone4 = Math.floor(Math.random() * 12 + 1);
+    // console.log(stone4);
 
-    var myScore = 0;
+    // var myScore = 0;
 
     var wins = 0;
     var losses = 0;
 
-    console.log("poo poo");
+    // console.log("poo poo");
 
-    $("#computer-pick").text(targetScore);
+    // $("#computer-pick").text(targetScore);
+startGameAgain();
+
 
     function startGameAgain() {
         myScore = 0;
@@ -35,9 +37,13 @@ $(document).ready(function () {
         stone2 = Math.floor(Math.random() * 12 + 1);
         stone3 = Math.floor(Math.random() * 12 + 1);
         stone4 = Math.floor(Math.random() * 12 + 1);
+        $("#total-score").text();
+        $("#my-score").text(myScore);
+        $("#computer-pick").text(targetScore);
     }
 
     function checkWin() {
+
         if (myScore === targetScore){
             wins++;
             $("#total-score").text("You Win!!!")
@@ -52,6 +58,7 @@ $(document).ready(function () {
             // alert = ("You Loose");  //output You Loose to Html
             startGameAgain();
         }
+        // startGameAgain();
     }
 
     $("#solar").on("click", function(){
