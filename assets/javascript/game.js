@@ -37,7 +37,7 @@ startGameAgain();
         stone2 = Math.floor(Math.random() * 12 + 1);
         stone3 = Math.floor(Math.random() * 12 + 1);
         stone4 = Math.floor(Math.random() * 12 + 1);
-        $("#total-score").text();
+        // $("#total-score").text();
         $("#my-score").text(myScore);
         $("#computer-pick").text(targetScore);
     }

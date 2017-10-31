@@ -14,3 +14,8 @@ h1, .text-center{
 body {
     background: black;
 }
+
+#panel-color{
+    background: rgba(128, 0, 128, 0.438);
+    color: white;
+}
